@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Custom Scrollbar for the entire website */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: #171716; /* Fallback background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid transparent; /* Padding around the thumb */
+  background-clip: content-box; /* Clips background to content box */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Fallback background color */
+}
