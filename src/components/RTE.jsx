@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Controller } from "react-hook-form";
 import { Editor } from "@tinymce/tinymce-react";
-import { motion } from "framer-motion";
+import config from "../conf/config";
 
 const RTE = ({ name, control, label, defaultValue = "" }) => {
   return (
@@ -17,7 +17,7 @@ const RTE = ({ name, control, label, defaultValue = "" }) => {
             control={control}
             render={({ field: { onChange } }) => (
               <Editor
-                apiKey="6qeqbpewzq4vy87hz0fudfjzygunvd0ojvpi3ka4u4r5ytag"
+                apiKey={config.tinyMce_Key}
                 initialValue={defaultValue}
                 init={{
                   height: 500,
