@@ -17,7 +17,7 @@ const RTE = ({ name, control, label, defaultValue = "" }) => {
             control={control}
             render={({ field: { onChange } }) => (
               <Editor
-                apiKey={config.tinyMce}
+                apiKey={import.meta.env.VITE_TINYMCE}
                 initialValue={defaultValue}
                 init={{
                   height: 500,
