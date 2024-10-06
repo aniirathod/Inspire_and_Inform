@@ -17,7 +17,7 @@ const RTE = ({ name, control, label, defaultValue = "" }) => {
             control={control}
             render={({ field: { onChange } }) => (
               <Editor
-                apiKey={config.tinyMce_Key}
+                apiKey={config.tinyMce}
                 initialValue={defaultValue}
                 init={{
                   height: 500,
